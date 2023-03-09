@@ -1,27 +1,67 @@
-.cuadro {
+.formulario {
+    position: relative;
     width: 300px;
     padding: 20 px;
     border-radius: 20px;
-    margin:0 auto;
-    background: linear-gradient(#bd09b7, #6b4cf5)
+    margin: 0 auto;
+    background: linear-gradient(#bd09b7, #6b4cf5);
+    box-shadow: 5px 5px 15px 4px rgb(235, 96, 96);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 div {
     margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(255, 255, 255);
     font-size: 15px;
 }
 
-.button {
-    padding-bottom: 15px;
-    padding-right: 14px;
-}
 
 h1 {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15px;
     padding-top: 15px;
+}
+
+
+input#email {
+    height: 24px;
+    width: 97%;
+
+}
+
+input#password {
+    width: 97%;
+    height: 24px;
+}
+
+select {
+    width: 100%;
+    height: 29px;
+    padding-left: 5px;
+}
+
+div.button {
+    position: relative;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+input[type="submit"] {
+    position: relative;
+    padding: 5px 10px;
+}
+
+@media (max-width: 500px) {
+    .formulario {
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    .formulario {
+        width: 300px;
+    }
 }
